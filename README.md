@@ -12,5 +12,4 @@ To crawl Java-8 with jenkinsci client library was used
 ![alt tag](https://raw.githubusercontent.com/bogdartysh/jenkins_stats/master/results/number_of_builds.png)
 ![alt tag](https://raw.githubusercontent.com/bogdartysh/jenkins_stats/master/results/success_rate.png)
 ![alt tag](https://raw.githubusercontent.com/bogdartysh/jenkins_stats/master/results/failure_rate.png)
-![alt tag](https://raw.githubusercontent.com/bogdartysh/jenkins_stats/master/results/failure_rate.png)
 
