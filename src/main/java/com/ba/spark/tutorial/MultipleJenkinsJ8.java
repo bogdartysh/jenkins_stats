@@ -1,6 +1,6 @@
 package com.ba.spark.tutorial;
 
-import static com.ba.spark.tutorial.MyOsmUtils.getIndicators;
+import static com.ba.spark.tutorial.CommontUtils.getIndicators;
 
 import java.io.PrintStream;
 import java.nio.file.Files;

@@ -17,8 +17,8 @@ import scala.Tuple2;
 /**
  * Created by bartyushenko on 23.06.16.
  */
-public final class MyOsmUtils {
-	private static Logger log = LogManager.getLogger(MyOsmUtils.class);
+public final class CommontUtils {
+	private static Logger log = LogManager.getLogger(CommontUtils.class);
 
 	public static BuildWithDetails getBuildWithDetails(Build b) {
 		try {

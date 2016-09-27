@@ -1,6 +1,6 @@
 package com.ba.spark.tutorial;
 
-import static com.ba.spark.tutorial.MyOsmUtils.getIndicators;
+import static com.ba.spark.tutorial.CommontUtils.getIndicators;
 
 import com.offbytwo.jenkins.JenkinsServer;
 import com.offbytwo.jenkins.model.Build;
@@ -68,12 +68,12 @@ public class MultipleJenkinsSparkKM {
 
 	static ArrayList<BuildWithDetails> getAllJobs(Tuple2<String, String> n) {
 		logger.info("getAllJobsTuple " + n);
-		List<Build> builds = MyOsmUtils.getAllBuildsOfJob(n);
+		List<Build> builds = CommontUtils.getAllBuildsOfJob(n);
 		return
 				new ArrayList<>(
 						builds.stream()
 								.filter(b -> b != null)
-								.map(b -> MyOsmUtils.getBuildWithDetails(b))
+								.map(b -> CommontUtils.getBuildWithDetails(b))
 								.filter(b -> b != null)
 								.collect(Collectors.toList()));
 	}
