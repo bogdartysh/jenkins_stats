@@ -1,4 +1,4 @@
-package com.ba.spark;
+package com.ba.spark.tutorial;
 
 import static com.ba.spark.tutorial.MyOsmUtils.getIndicators;
 
@@ -22,7 +22,7 @@ public class MultipleJenkinsJ8 extends MultipleJenkinsSparkKM {
 		boolean printed = false;
 
 		try (PrintStream out = new PrintStream(
-				Files.newOutputStream(Paths.get("/work/coe/out.csv"), StandardOpenOption.CREATE))) {
+				Files.newOutputStream(Paths.get("/work/coe/spark_jenkins/out20160817_08.csv"), StandardOpenOption.CREATE))) {
 			for (String jenkins : jenkisUris) {
 				List<String> jobs = new ArrayList<>(getJobsTuples(jenkins));
 				Collections.reverse(jobs);

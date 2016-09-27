@@ -29,6 +29,7 @@ public class MultipleJenkinsSparkKM {
 		System.out.println("started ");
 
 		try (JavaSparkContext jsc = new JavaSparkContext(new SparkConf()
+				.setJars(MyOsmUtils.JARS)
 				.setAppName("20160803_3_1"))) {
 
 			jsc.parallelize(jenkisUris)
@@ -86,24 +87,26 @@ public class MultipleJenkinsSparkKM {
 	static final ArrayList<String> jenkisUris = new ArrayList<>(Arrays.asList(
 			// taken from https://wiki.jenkins-ci.org/pages/viewpage.action?pageId=58001258 on 2016-07-26
 
-				"https://builds.apache.org/"
-				,
-				"https://build.kde.org/"
-					,
-				"https://ci.exoplatform.org/"
-				,
-					"https://ci.jboss.org/hudson/"
-				,
+			//	"https://builds.apache.org/"
+			//	,
+			//	"https://build.kde.org/"
+			//		,
+			//	"https://ci.exoplatform.org/"
+			//	,
+			//		"https://ci.jboss.org/hudson/"
+			////		,
 
-				"https://ci.openquake.org/"
-				,
+			//	"https://ci.openquake.org/"
+			//		,
 
-				"https://ci.opensuse.org/"
-				,
-				"https://jenkins.qa.ubuntu.com/"
-				,
-				"https://qa.nuxeo.org/jenkins/"
-				,
-				"https://qa.coreboot.org/"
+			//		"https://ci.opensuse.org/"
+			//			,
+			//		"https://jenkins.qa.ubuntu.com/"
+			//			,
+			//	"https://qa.nuxeo.org/jenkins/",
+			//	"https://qa.coreboot.org/"
+			"http://172.30.148.14:8080/"
+			//,
+		//	"http://172.30.148.7:58082/"
 	));
 }
