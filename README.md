@@ -12,4 +12,4 @@ On  2016-07-07 mentioned on https://wiki.jenkins-ci.org/pages/viewpage.action?pa
 ![alt tag](https://raw.githubusercontent.com/bogdartysh/jenkins_stats/master/results/failure_rate.png)
 
 ### conclusions
-# in tested project roughly 25 % builds failes
+1. roughly 25 % builds failes within checked Jenkins projects
